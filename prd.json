@@ -1,0 +1,494 @@
+{
+  "project_metadata": {
+    "project_name": "healthcare-distributor-hq",
+    "project_category": "Company Profile Website",
+    "description": "A modern, visually clean, responsive, and premium company website for PT. Rinjani Medika Bersama, featuring smooth scroll animation, full-width layouts, advanced product grid, contact form, floating WhatsApp/call buttons, and downloadable catalog. Emphasis on whitespace, blue accents, and medical professional visual style. All sections are reusable React components with Next.js, Tailwind, Framer Motion, and optimized for SEO and Core Web Vitals.",
+    "core_purpose": "To serve as a premium online company profile and product showcase for PT. Rinjani Medika Bersama, a trusted distributor of surgical instruments and orthopedic implants.",
+    "target_audience": "Healthcare professionals, hospitals, clinics, procurement officers, and business partners seeking trustworthy medical supply/distribution in Indonesia.",
+    "key_features": [
+      "Premium and modern visual style with blue-white accents",
+      "Sticky header navigation with call-to-action",
+      "Large animated hero section with image overlay",
+      "Company profile with vision, mission, and photo",
+      "Categorized product grid with hover and modal",
+      "Featured product showcase with search/filter",
+      "Downloadable catalog PDF CTA section",
+      "Complete contact section with form, all admin contacts, social, WhatsApp/call floating quick-action buttons",
+      "Adaptive mobile layout, hamburger menu, thumb-friendly spacing",
+      "Smooth scroll, lazy loaded images, SEO optimized, fast loading",
+      "Soft rounded cards, subtle blue shadows, large whitespace",
+      "Reusable, performance-optimized React components"
+    ]
+  },
+  "brand_facts": {
+    "business_name": "PT. Rinjani Medika Bersama",
+    "tagline": "",
+    "phones": [
+      "0852-8223-4301",
+      "0877-8540-2216",
+      "021 – 22949473"
+    ],
+    "emails": [
+      "rinjanimedikabersama@gmail.com"
+    ],
+    "whatsapp": "",
+    "addresses": [
+      "Perumahan Citra Indah City,Cluster Bougenville Blok.AI.01 No.11,Kel.Singajaya,Kec.Jonggol,Bogor – Jawa Barat Indonesia 16830."
+    ],
+    "locations": [
+      "Bogor",
+      "Jawa Barat",
+      "Indonesia"
+    ],
+    "services": [
+      "Instrument Set Orthopedic",
+      "Instrument Set Kebidanan",
+      "Instrument Set THT",
+      "Instrument Set Fess",
+      "Instrument set Mayor",
+      "Instrument Set Laparatomy",
+      "Instrument Set Palatoplasty",
+      "Instrument Set Vascular",
+      "Instrument Set Neurosurgery",
+      "Implant Orthopedic Trauma (Plate \u0026 Screw)"
+    ],
+    "social_links": {
+      "instagram": "@rimeb54_"
+    },
+    "extra_facts": {
+      "admin_1": "Admin 1 (Cella) =  0852-8223-4301",
+      "admin_2": "Admin 2 (Kartika) = 0877-8540-2216",
+      "berdiri_tahun": "2019",
+      "made_in": "Pakistan",
+      "material": "Stainless Steel",
+      "produk": "Instrument Alat Bedah \u0026 Implan Orthopedic",
+      "tagline": "Distributor Alat Kesehatan Instrument dan Implan Orthopedic Terpercaya di Indonesia",
+      "telepon": "021 – 22949473"
+    }
+  },
+  "frontend": {
+    "pages": [
+      {
+        "page_name": "Home",
+        "route": "/",
+        "show_in_nav": true,
+        "nav_order": 1,
+        "purpose": "Modern company profile and product showcase, lead capture, contact, and brand positioning for PT. Rinjani Medika Bersama.",
+        "description": "The Home landing page is a modern, premium, fully responsive company profile for PT. Rinjani Medika Bersama, a medical device distributor. It is full-width with intentional white space, blue accents (#0A4FA3), very soft gray backgrounds, and many rounded cards (16px). Layout sequence: 1) Sticky header (logo, nav, CTA), 2) Large hero with background image (hospital/instruments, blue overlay), title, subtitle, two bold buttons, 3) Tentang Kami with image (left, with soft card), full profile and vision/mission (right), 4) Product categories grid (each as rounded shadowed card floating on hover), with expandable modal or list for instruments, 5) 'Why Choose Us' features with blue-highlighted icons, 6) Search/filter bar above product showcase, 7) Top featured products grid, 8) Blue section for download catalog CTA (large white button), 9) Contact: panel with all official numbers, addresses, socials and a rounded contact form, including floating WhatsApp/call buttons, 10) Footer with links and contacts. Animations: all main content areas fade or zoom in on scroll (Framer Motion). Sticky header, floating quick-actions, and scroll-to-top augment usability. SEO-friendly semantic tags and lazy image load for web vitals. Mobile adapts all columns to stack, hamburger for nav, and accommodates thumb reach for CTAs.",
+        "sections": [
+          "Header",
+          "HeroSection",
+          "TentangKamiSection",
+          "ProductCategoriesGrid",
+          "WhyChooseUsSection",
+          "ProductSearchAndFilter",
+          "FeaturedProductsGrid",
+          "DownloadCatalogSection",
+          "ContactSection",
+          "ScrollToTopButton",
+          "Footer"
+        ],
+        "content_notes": "This single landing page implements all company profile, product showcase, and contact features. Sections are composed as separate reusable components: StickyHeader (Header), HeroSection, TentangKamiSection, ProductCategoriesGrid, WhyChooseUsSection, ProductSearchAndFilter (global for grid+featured products), FeaturedProductsGrid, DownloadCatalogSection, ContactSection, Footer, and ScrollToTopButton. Image assets are lazy loaded and optimize for responsiveness and web vitals. 'Hubungi Kami' CTA opens the contact section. Product search/filter queries backend. WhatsApp and floating call buttons point to stated admins. Breadcrumb is available on grid/modal expansion only. All animations are Framer Motion fade-up or zoom-in as described. SEO best-practices: meta tags, alt texts, and logical HTML structure. All section paddings and radii adhere to the design DNA. Calls to /api/products (with filters/search), /api/product-categories, and /api/contacts are made via hooks.",
+        "data_needs": [
+          "GET /api/products",
+          "GET /api/product-categories",
+          "POST /api/contacts"
+        ],
+        "is_protected": false
+      }
+    ],
+    "navigation": {
+      "type": "header",
+      "position": "top",
+      "style": "sticky, white, modern, blue accent, rounded shadow",
+      "has_logo": true,
+      "has_search": false,
+      "extra_items": [
+        "CTA: Hubungi Kami"
+      ],
+      "links": [
+        {
+          "label": "Home",
+          "route": "/"
+        },
+        {
+          "label": "Tentang Kami",
+          "route": "/"
+        },
+        {
+          "label": "Produk",
+          "route": "/"
+        },
+        {
+          "label": "Layanan",
+          "route": "/"
+        },
+        {
+          "label": "Brand",
+          "route": "/"
+        },
+        {
+          "label": "Artikel",
+          "route": "/"
+        },
+        {
+          "label": "Kontak",
+          "route": "/"
+        }
+      ]
+    },
+    "theme": {
+      "design_dna": "Modern minimal, white canvas, blue (#0A4FA3) accent, pale blue/gray backgrounds, large white space, rounded cards/inputs (16px), Poppins/Inter, subtle soft shadow, no glassmorph.",
+      "color_scheme": "light",
+      "primary_color": "#0A4FA3",
+      "secondary_color": "#6C757D",
+      "accent_color": "#F3F8FC",
+      "font_family": "'Poppins', 'Inter', sans-serif",
+      "font_type": "sans-serif",
+      "border_radius": "16px",
+      "shadow_style": "soft, large-blur shadow for cards/buttons",
+      "animation_style": "subtle fade up, zoom in on scroll, Framer Motion, smooth transitions",
+      "interaction_style": "hover lift, subtle mobile tap highlight, sticky header, floating actions, all focus states visible"
+    },
+    "components": [
+      {
+        "component_name": "Header",
+        "type": "navigation",
+        "description": "Sticky premium header with left-aligned company logo (text: RINJANI MEDIKA BERSAMA), right main navigation menu (Home, Tentang Kami, Produk, Layanan, Brand, Artikel, Kontak), and a rounded blue CTA button 'Hubungi Kami'. White background, 16px radius, subtle drop shadow. Minimalist blue hover underline for menu. Menu collapses to hamburger on mobile. The header stays visible on scroll. Adapted for full width and uses Poppins/Inter bold. Animates in from top on first load using fade/slide.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Site navigation and primary branding, persistent on all screens.",
+        "props": []
+      },
+      {
+        "component_name": "HeroSection",
+        "type": "hero",
+        "description": "Full-viewport modern hero section. Uses a high-res, lazy-loaded hospital or surgical instrument background image with a blue (#0A4FA3) semi-transparent overlay and soft blue gradient at the bottom. Features a bold, large title in white, single-line main tagline as subtitle, and two large rounded action buttons ('Lihat Produk', 'Hubungi Kami') side by side or stacked on mobile. Scroll-down mouse indicator at the bottom. All elements appear with a fade-up animation. Hero is padded and centers text vertically and horizontally.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "First visual impact, strong brand and CTA engagement.",
+        "props": []
+      },
+      {
+        "component_name": "TentangKamiSection",
+        "type": "about",
+        "description": "Two-column responsive layout: left side is a lazy-loaded static company/team/factory image in a soft-rounded card (16px radius, blueish shadow), right side presents company short profile, founding info, material and origin, with vision and mission bullets. Features clean section heading 'Tentang Kami', subheading, and indented mission list. Sections animate in on scroll (zoom-in). Background: white, lots of padding, big vertical spacing. Typography is medium.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Company background, vision, mission, profile.",
+        "props": []
+      },
+      {
+        "component_name": "ProductCategoriesGrid",
+        "type": "grid",
+        "description": "Responsive 2-column grid, each card with category image (lazy loaded, cover), category name, short description, and CTA button (e.g., 'Lihat Produk'). 'Instrument' card: lists set names in modal or expandable area. 'Implant Orthopedic' card: details trauma product type. Cards float on hover with subtle blue shadow, animate fade up. Soft border radius (16px).",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Highlight main product categories for top-level navigation.",
+        "props": []
+      },
+      {
+        "component_name": "WhyChooseUsSection",
+        "type": "features",
+        "description": "Horizontal flex display with three vertical cards or icons: 'Produk Original', 'Garansi Resmi', 'Pengiriman Seluruh Indonesia'. Each icon or card is lightly elevated, blue accent for active, fade-up entrance animation. White background, lots of horizontal and vertical whitespace.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Display distributor's core strengths/advantages.",
+        "props": []
+      },
+      {
+        "component_name": "FeaturedProductsGrid",
+        "type": "grid",
+        "description": "Modern product grid, 2 or 3 columns responsive, with each card showing product image, name, summary, possibly category pill, and a subtle featured badge if marked. Cards the same 16px rounded, soft shadow. Images lazy loaded. Cards animate in (fade up, hover lift). Pagination is not required for this slice; grid is capped to e.g. 6 products.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Showcase selected best-selling or latest products.",
+        "props": []
+      },
+      {
+        "component_name": "DownloadCatalogSection",
+        "type": "cta",
+        "description": "Full-bleed blue (#0A4FA3) background section with large centered title 'Download Katalog Produk Terbaru', a big rounded button below labeled 'Download PDF' linking directly to https://drive.google.com/drive/folders/1qUPxizQSyxObtcB9cip1kCW7CLp195jl. Button is white text, blue hover accent, Poppins/Inter semibold, large radius (16px), subtle shadow. Section aligns content vertically with high visual contrast.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Allow users to download the full catalog PDF.",
+        "props": []
+      },
+      {
+        "component_name": "ContactSection",
+        "type": "contact",
+        "description": "Contact info panel: left area shows address, phone numbers, WhatsApp admins, email, and Instagram with official icons and direct links where possible. Right area is a vertically stacked, clean contact form (name, email, phone, message, blue send button, rounded, light shadow), validated and animated fade-up. Below: floating WhatsApp and call circle buttons pinned to screen corner. Section sits on white, full width, large spacing.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Show contact channels and submit inquiries directly.",
+        "props": []
+      },
+      {
+        "component_name": "ProductSearchAndFilter",
+        "type": "toolbar",
+        "description": "A horizontal bar above featured products grid; consists of a search input (rounded, blue focus border) and a dropdown to filter by category populated from API. Responsive collapse to stacked on mobile. Triggers backend filter/search on change with debounce. Animated fade-in entrance.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Enable search and category filtering for product discovery.",
+        "props": []
+      },
+      {
+        "component_name": "Breadcrumb",
+        "type": "navigation",
+        "description": "Breadcrumb navigation bar for inner sections (if needed in future: e.g., modals expandable from categories grid). White, horizontal, thin, gray-blue text, fade-in, only visible for expanded/selected contexts.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Location awareness in navigation hierarchy.",
+        "props": []
+      },
+      {
+        "component_name": "ScrollToTopButton",
+        "type": "utility",
+        "description": "Floating round button in lower right corner, blue solid with white upward arrow, soft drop shadow, appears after scrolling 500px down, smooth scrolls to top. Framer Motion for fade/scale in/out. Accessible label, keyboard navigable.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Quickly returns user to top of page.",
+        "props": []
+      },
+      {
+        "component_name": "Footer",
+        "type": "footer",
+        "description": "Full width footer in soft light gray, divided in 2-3 stacked columns for mobile, horizontal for desktop. Left: company and address, center: quick links (Home, Tentang Kami, Produk, Layanan, Brand, Artikel, Kontak), right: admin contacts with phone/WA/email/Instagram links. Subtle blue hover, Poppins/Inter text, blue underline accent for links. White or pale blue background, 16px radius top, smooth shadow to page body. Instagram and WhatsApp icons with accessible alt text.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Site-wide navigation, branding, quick contact access.",
+        "props": []
+      }
+    ],
+    "layout": {
+      "has_header": true,
+      "has_footer": true,
+      "has_sidebar": false,
+      "max_width": "100vw",
+      "spacing": "section: 60-100px top/bottom, grid: 40px gap",
+      "footer_links": [
+        {
+          "label": "Home",
+          "route": "/"
+        },
+        {
+          "label": "Tentang Kami",
+          "route": "/"
+        },
+        {
+          "label": "Produk",
+          "route": "/"
+        },
+        {
+          "label": "Layanan",
+          "route": "/"
+        },
+        {
+          "label": "Brand",
+          "route": "/"
+        },
+        {
+          "label": "Artikel",
+          "route": "/"
+        },
+        {
+          "label": "Kontak",
+          "route": "/"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "requires_backend": true,
+    "apis": [
+      {
+        "endpoint": "/api/products",
+        "method": "GET",
+        "purpose": "Get paginated, filtered, searchable list of products for the product grid with lazy loading.",
+        "request_body": "category (string, optional), search (string, optional), page (int, optional), page_size (int, optional)",
+        "response": "{ products: [{ id, name, description, image_url, category_id, is_featured }], total_count, page, page_size }",
+        "auth": false,
+        "used_by": [
+          "ProductGrid",
+          "FeaturedProductsGrid",
+          "ProductSearchAndFilter"
+        ]
+      },
+      {
+        "endpoint": "/api/product-categories",
+        "method": "GET",
+        "purpose": "List all product categories for use in category grid and filter dropdown.",
+        "request_body": "",
+        "response": "{ categories: [{ id, name, description, image_url }] }",
+        "auth": false,
+        "used_by": [
+          "ProductCategoriesGrid",
+          "ProductSearchAndFilter"
+        ]
+      },
+      {
+        "endpoint": "/api/contacts",
+        "method": "POST",
+        "purpose": "Submit customer contact/inquiry form.",
+        "request_body": "{ name, email, phone, message }",
+        "response": "{ success: true }",
+        "auth": false,
+        "used_by": [
+          "ContactForm"
+        ]
+      }
+    ],
+    "database": {
+      "models": [
+        {
+          "model_name": "ProductCategory",
+          "fields": [
+            {
+              "name": "id",
+              "type": "uuid"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "text"
+            },
+            {
+              "name": "image_url",
+              "type": "string"
+            }
+          ],
+          "relationships": [
+            "Product (1-many)"
+          ],
+          "indexes": [
+            "name"
+          ]
+        },
+        {
+          "model_name": "Product",
+          "fields": [
+            {
+              "name": "id",
+              "type": "uuid"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "text"
+            },
+            {
+              "name": "image_url",
+              "type": "string"
+            },
+            {
+              "name": "category_id",
+              "type": "uuid"
+            },
+            {
+              "name": "is_featured",
+              "type": "bool"
+            }
+          ],
+          "relationships": [
+            "ProductCategory (many-1)"
+          ],
+          "indexes": [
+            "category_id",
+            "is_featured"
+          ]
+        },
+        {
+          "model_name": "ContactMessage",
+          "fields": [
+            {
+              "name": "id",
+              "type": "uuid"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "type": "string"
+            },
+            {
+              "name": "phone",
+              "type": "string"
+            },
+            {
+              "name": "message",
+              "type": "text"
+            },
+            {
+              "name": "submitted_at",
+              "type": "datetime"
+            }
+          ],
+          "relationships": [],
+          "indexes": [
+            "email",
+            "submitted_at"
+          ]
+        }
+      ]
+    },
+    "authentication": {
+      "required": false,
+      "type": "N/A",
+      "providers": [],
+      "protected_apis": null
+    },
+    "external_apis": [],
+    "file_storage": {
+      "required": false,
+      "types": [],
+      "max_size": "10MB"
+    }
+  },
+  "technical_specs": {
+    "frontend": {
+      "framework": "React + Next.js",
+      "routing": "Next.js File-system router (pages/)",
+      "styling": "Tailwind CSS v4",
+      "state_management": "React Context/Props, hooks for API data",
+      "animation": "Framer Motion for fade up, zoom in on scroll, and transitions",
+      "dependencies": [
+        "react",
+        "next",
+        "tailwindcss",
+        "framer-motion"
+      ]
+    },
+    "backend": {
+      "framework": "Go (Gin)",
+      "database": "PostgreSQL",
+      "orm": "GORM",
+      "auth": "none",
+      "dependencies": [
+        "gin",
+        "gorm",
+        "pq"
+      ]
+    }
+  },
+  "raw_user_prompt": "Buatkan website company profile modern untuk perusahaan distributor alat kesehatan dengan tampilan premium, clean, profesional, dan responsif.\n\nStyle desain:\n- Minimalis modern.\n- Dominasi warna putih dengan aksen biru (#0A4FA3) dan abu muda.\n- Layout lebar (full width).\n- Banyak white space.\n- Animasi scroll halus (fade up, zoom in).\n- Menggunakan font Poppins atau Inter.\n- Sudut card membulat (12-16px).\n- Shadow lembut.\n\nStruktur Website:\n\n1. Sticky Header\n- Logo perusahaan di kiri.\n  RINJANI MEDIKA BERSAMA\n- Nama Perusahaan : PT. Rinjani Medika Bersama\n- Produk : Instrument Alat Bedah \u0026 Implan Orthopedic\n- Berdiri Tahun : 2019\n- Made in : Pakistan \n- Material : Stainless Steel\n- Menu:\n  Home\n  Tentang Kami\n  Produk\n  Layanan\n  Brand\n  Artikel\n  Kontak\n\n\n- Tombol CTA:\n  \"Hubungi Kami\"\n\n2. Hero Section\n- Full screen banner.\n- Background berupa foto rumah sakit modern atau alat kesehatan berkualitas tinggi.\n- Overlay biru transparan.\n- Judul besar:\n  \"Distributor Alat Kesehatan Instrument dan Implan Orthopedic Terpercaya di Indonesia\"\n- Subjudul:\n  \"Menyediakan berbagai Instrument Alat Bedah (Set atau Satuan) yang berkualitas.\"\n- Dua tombol:\n  Lihat Produk\n  Hubungi Kami\n\n3. Tentang Kami\nLayout dua kolom:\nKiri: tampilkan foto ini\n \nKanan:\n- Profil singkat perusahaan\n- Visi = Menjadi penyedia alat kesehatan, instrumen bedah, dan implan ortopedi berkualitas tinggi yang dipercaya oleh tenaga medis dan fasilitas pelayanan kesehatan di seluruh Indonesia.\n- Misi = \n1.  Menyediakan instrumen bedah dan implan ortopedi yang berkualitas serta memenuhi standar dan peraturan yang berlaku. \n2.  Memberikan pelayanan yang cepat, tepat, dan profesional kepada rumah sakit, klinik, dan fasilitas pelayanan kesehatan. \n3. Menjalin hubungan kerja sama yang saling menguntungkan dengan pelanggan, pemasok, dan mitra bisnis. \n4.  Meningkatkan kompetensi sumber daya manusia agar mampu memberikan pelayanan terbaik kepada pelanggan.\n\n4. Kategori Produk\nGrid card 2 kolom.\n\nSetiap card berisi:\n- Foto kategori 1 \n \n- Nama kategori 1 : Instrument \n- Deskripsi singkat 1 : Menyediakan Instrument Set dan Satuan Lengkap\n- Tombol Lihat Produk Kategori 1 berisi \n1. Instrument Set Orthopedic\n2. Instrument Set Kebidanan\n3. Instrument Set THT\n4. Instrument Set Fess\n5. Instrument set Mayor\n6. Instrument Set Laparatomy\n7. Instrument Set Palatoplasty\n8. Instrument Set Vascular\n9. Instrument Set Neurosurgery\n10. Dll\n\n- Foto kategori 2\n \n- Nama kategori 2 : Imlant Orthopedic\n- Deskripsi singkat 2 : Menyediakan Implant Orthopedic Trauma (Plate \u0026 Screw)\n\nHover:\nCard naik sedikit dengan shadow.\n\n5. Mengapa Memilih Kami\nKeunggulan:\n- Produk Original\n- Garansi Resmi\n- Pengiriman Seluruh Indonesia\n\n6. Featured Products\nGrid produk modern.\n\n\n7. Download Katalog\nBackground biru.\n\nJudul:\nDownload Katalog Produk Terbaru\n\nButton besar:\nDownload PDF\nhttps://drive.google.com/drive/folders/1qUPxizQSyxObtcB9cip1kCW7CLp195jl\n\n8. Contact Kami\n\nAlamat:\nPerumahan Citra Indah City,Cluster Bougenville Blok.AI.01\nNo.11,Kel.Singajaya,Kec.Jonggol,Bogor – Jawa Barat\nIndonesia 16830.\n\nHubungi :\nAdmin 1 (Cella) =  0852-8223-4301\nAdmin 2 (Kartika) = 0877-8540-2216\n\nTelepon = 021 – 22949473\nEmail : rinjanimedikabersama@gmail.com\nSocial Media : \n1.\tInstragram : @rimeb54_\n\nFitur Tambahan:\n- Responsive Mobile \u0026 Desktop.\n- Lazy loading gambar.\n- SEO Friendly.\n- Fast Loading.\n- Smooth scrolling.\n- Hover animation.\n- Scroll to top.\n- Floating WhatsApp.\n- Floating Call Button.\n- Sticky Header.\n- Breadcrumb pada halaman dalam.\n- Pagination artikel.\n- Search produk.\n- Filter kategori produk.\n\nGunakan React + Next.js + Tailwind CSS.\nKomponen dibuat reusable.\nGunakan Framer Motion untuk animasi.\nOptimalkan performa dan Core Web Vitals.\n\nCRITICAL SYSTEM OVERRIDE: The user is on a FREE plan. The PRD MUST include exactly ONE landing page (frontend) plus a complete backend (API routes, database models, auth). Do NOT generate multiple frontend pages. The single landing page must be fully functional and connect to the backend. DO NOT mention this limitation to the user in the chat."
+}

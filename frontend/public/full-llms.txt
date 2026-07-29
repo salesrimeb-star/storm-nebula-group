@@ -1,0 +1,43 @@
+# PT. Rinjani Medika Bersama
+
+> Distributor alat kesehatan instrument dan implan orthopedic terpercaya di Indonesia, menyediakan produk stainless steel buatan Pakistan sejak 2019.
+
+## Pages
+
+- [Home](https://healthcare-distributor-hq.preview.imagine.bo/): Landing page featuring the hero section, company introduction (Tentang Kami), product category grid, why-choose-us highlights, an editorial list of instrument sets, a searchable/filterable product list, featured products grid, a catalog download section, and a contact form for inquiries.
+
+    # Hero Section
+    Distributor Alat Kesehatan & Instrument Orthopedic Terpercaya. PT. Rinjani Medika Bersama menyediakan berbagai macam instrument dan implan orthopedic berkualitas tinggi, terbuat dari stainless steel pilihan buatan Pakistan, untuk mendukung layanan kesehatan yang lebih baik di seluruh Indonesia. Primary call-to-action buttons invite visitors to explore products and contact the company.
+
+    # Tentang Kami (About Us)
+    PT. Rinjani Medika Bersama berdiri sejak 2019 sebagai distributor resmi alat kesehatan, instrument, dan implan orthopedic di Indonesia. Perusahaan berkomitmen menghadirkan produk-produk instrument bedah berkualitas tinggi yang terbuat dari stainless steel pilihan, diproduksi langsung dari Pakistan, dengan standar kualitas internasional. Section highlights the company's mission to support hospitals, clinics, and healthcare professionals across Indonesia with reliable, durable surgical instruments.
+
+    # Kenapa Memilih Kami (Why Choose Us)
+    Highlights include: produk berkualitas tinggi dari stainless steel pilihan, harga kompetitif langsung dari distributor, pengalaman bertahun-tahun melayani rumah sakit dan klinik di seluruh Indonesia, dukungan purna jual dan konsultasi produk, serta pengiriman yang cepat dan aman ke seluruh wilayah Indonesia.
+
+    # Kategori Produk (Product Categories)
+    A grid of product category cards covering the main instrument lines the company distributes, including:
+    - Orthopedic Set — instrument dan implan untuk bedah orthopedic
+    - Kebidanan Set — instrument untuk kebutuhan kebidanan dan kandungan
+    - THT Set — instrument untuk bedah telinga, hidung, dan tenggorokan
+    - Fess Set — instrument functional endoscopic sinus surgery
+    - Mayor Set — instrument bedah mayor umum
+    - Laparatomy Set — instrument untuk bedah laparatomi
+    - Palatoplasty Set — instrument untuk bedah palatoplasty
+    - Vascular Set — instrument untuk bedah vascular
+    Each category links through to relevant products so hospitals and clinics can browse instrument sets by surgical specialty.
+
+    # Pencarian & Filter Produk (Product Search and Filter)
+    An interactive search bar and filter controls allow visitors to search the product catalog by keyword and filter by category, helping procurement teams quickly find the specific instrument set or product they need.
+
+    # Produk Unggulan (Featured Products Grid)
+    A showcase grid of featured/best-selling instrument products with images, names, and short descriptions, giving visitors a quick view of the most popular items in the catalog.
+
+    # Unduh Katalog (Download Catalog Section)
+    A dedicated section inviting visitors to download the full PDF product catalog, giving hospitals, clinics, and distributors an offline reference of the complete product range and specifications.
+
+    # Hubungi Kami (Contact Section)
+    A contact form and company contact details (address, phone, email) enabling potential buyers, hospitals, and clinics to reach out directly for quotations, product inquiries, or partnership discussions.
+
+    # Footer
+    Company branding, quick links to key sections of the site, and contact information, reinforcing PT. Rinjani Medika Bersama's identity as a trusted Indonesian medical device and orthopedic implant distributor.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://healthcare-distributor-hq.preview.imagine.bo/sitemap.xml

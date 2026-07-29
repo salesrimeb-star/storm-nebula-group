@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "method": "GET",
+      "path": "/api/products",
+      "auth": false,
+      "purpose": "Get paginated, filtered, searchable list of products for the product grid with lazy loading.",
+      "request_body": "category (string, optional), search (string, optional), page (int, optional), page_size (int, optional)",
+      "response": "{ products: [{ id, name, description, image_url, category_id, is_featured }], total_count, page, page_size }"
+    },
+    {
+      "method": "GET",
+      "path": "/api/product-categories",
+      "auth": false,
+      "purpose": "List all product categories for use in category grid and filter dropdown.",
+      "request_body": "",
+      "response": "{ categories: [{ id, name, description, image_url }] }"
+    },
+    {
+      "method": "POST",
+      "path": "/api/contacts",
+      "auth": false,
+      "purpose": "Submit customer contact/inquiry form.",
+      "request_body": "{ name, email, phone, message }",
+      "response": "{ success: true }"
+    }
+  ]
+}
